@@ -1,0 +1,2029 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Opensans-bold";
+  src: url(../fonts/OpenSans-bold.woff);
+}
+
+@font-face {
+  font-family: "Opensans";
+  src: url(../fonts/OpenSans-light.woff);
+}
+
+.Contenedor_Agregar_Region.ocultar {
+  visibility: visible;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  border-bottom: 7px solid #ffffff;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+/*************************/
+header .container-Header {
+  width: 100vw;
+  height: 64px;
+  background-color: #1d72c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .container-Header .Lcolum-6 {
+  width: calc(8.3% * 5);
+  margin: 23px 0 0 30px;
+}
+
+header .container-Header .Lcolum-6 a {
+  color: #ffffff;
+  font-family: "Opensans-bold";
+  text-decoration: none;
+}
+
+header .container-Header .Mcolum-6 {
+  width: calc(8.3% * 6);
+}
+
+header .container-Header .Mcolum-6 ul {
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+header .container-Header .Mcolum-6 ul li {
+  float: right;
+  display: inline;
+  margin-left: 34px;
+  direction: initial;
+}
+
+header .container-Header .Mcolum-6 ul li a {
+  color: #ffffff;
+  font-family: "Opensans";
+  list-style-type: none;
+  text-decoration: none;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+header .container-Header .Mcolum-6 ul li a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/***********************************/
+.contenedor-botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 77.5px;
+}
+
+.contenedor-botones .contenedor-left {
+  width: calc(8.3% * 6);
+}
+
+.contenedor-botones .contenedor-right {
+  width: calc(8.3% * 6);
+}
+
+.contenedor-botones .contenedor-right .icono {
+  color: #1d72c2;
+}
+
+.contenedor-botones .contenedor-right .Agregar {
+  margin-left: 10px;
+  border: 1px solid #1d72c2;
+  padding: 13px 30px;
+  background-color: #1d72c2;
+}
+
+.contenedor-botones .contenedor-right .Agregar span {
+  font-family: "Opensans";
+  color: #ffffff;
+  text-align: center;
+}
+
+.contenedor-botones .contenedor-right .Exportar {
+  margin-left: 10px;
+  font-family: "Opensans";
+  color: #1d72c2;
+  background-color: #ffffff;
+  border: 1px solid #1d72c2;
+  padding: 13px 30px;
+}
+
+/****************login***********/
+.main_login {
+  padding-top: 100px;
+}
+
+.main_login #Login {
+  margin-top: 160px;
+  text-align: center;
+  width: 600px;
+  /*  height: 200px; */
+  border: 1px solid #1d72c2;
+  background-color: grey;
+  margin: auto;
+}
+
+.main_login #Login h1 {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  font-size: 55px;
+}
+
+.main_login #Login form div {
+  margin: 30px 0;
+}
+
+.main_login #Login form div label {
+  font-family: "Opensans-bold";
+  color: #000000;
+  font: 400 20px Arial;
+}
+
+.main_login #Login form div .txt {
+  font: 400 20px Arial;
+  padding: 2px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.main_login #Login form div .btn_Ingresar {
+  border: 1px solid #1d72c2;
+  padding: 13px 30px;
+  background-color: #1d72c2;
+  font-size: 19px;
+}
+
+.main_login #Login form div .btn_Ingresar:hover {
+  background-color: #79b3ff;
+}
+
+/************************/
+main #NuevoUsuario {
+  margin-top: 50px;
+  text-align: center;
+  width: 600px;
+  height: 500px;
+  border: 1px solid #1d72c2;
+  background-color: grey;
+  margin: auto;
+}
+
+main #NuevoUsuario h1 {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+main #NuevoUsuario form div {
+  margin: 30px 0;
+}
+
+main #NuevoUsuario form div label {
+  font-family: "Opensans-bold";
+  color: #000000;
+}
+
+/***********Ventana_Agregar_Region*************/
+.Contenedor_Agregar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contenedor_Agregar .Ventana_Agregar {
+  background: grey;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  text-align: center;
+  padding: 30px;
+  width: 363px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.Contenedor_Agregar .Ventana_Agregar a i {
+  display: block;
+  float: right;
+  color: #000000;
+}
+
+.Contenedor_Agregar .Ventana_Agregar a i .svg-inline--fa.fa-w-11 {
+  width: 20px;
+}
+
+.Contenedor_Agregar .Ventana_Agregar a i:hover {
+  color: #0016b0;
+}
+
+.Contenedor_Agregar .Ventana_Agregar .Agregar_Formulario div {
+  padding-bottom: 10px;
+}
+
+.Contenedor_Agregar .Ventana_Agregar .Agregar_Formulario div .BtnGuardar {
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+.Contenedor_Agregar .Ventana_Agregar .Agregar_Formulario div .BtnGuardar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Agregar .Ventana_Agregar .Agregar_Formulario div .TxtGuardar {
+  padding: 10px;
+  border-radius: 40px;
+  outline: none;
+  border: 2px solid #0016b0;
+  background-color: #8f99e4;
+  text-align: center;
+  color: #ffffff;
+}
+
+/**********************/
+/***********Eliminar*************/
+.Contenedor_Eliminar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar {
+  background: grey;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  text-align: center;
+  padding: 30px;
+  width: 363px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar a i {
+  display: block;
+  float: right;
+  color: #000000;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar a i .svg-inline--fa.fa-w-11 {
+  width: 20px;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar a i:hover {
+  color: #0016b0;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar h4 span {
+  color: red;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar .Eliminar_formulario div {
+  padding-bottom: 10px;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar .Eliminar_formulario div .BtnEliminar {
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+.Contenedor_Eliminar .Ventana_Eliminar .Eliminar_formulario div .BtnEliminar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+/***********Eliminar*************/
+.Contenedor_Editar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contenedor_Editar .Ventana_Editar {
+  background: grey;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  text-align: center;
+  padding: 30px;
+  width: 363px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.Contenedor_Editar .Ventana_Editar a i {
+  display: block;
+  float: right;
+  color: #000000;
+}
+
+.Contenedor_Editar .Ventana_Editar a i .svg-inline--fa.fa-w-11 {
+  width: 20px;
+}
+
+.Contenedor_Editar .Ventana_Editar a i:hover {
+  color: #0016b0;
+}
+
+.Contenedor_Editar .Ventana_Editar h4 span {
+  color: red;
+}
+
+.Contenedor_Editar .Ventana_Editar .Editar_formulario div {
+  padding-bottom: 10px;
+}
+
+.Contenedor_Editar .Ventana_Editar .Editar_formulario div .BtnEditar {
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+.Contenedor_Editar .Ventana_Editar .Editar_formulario div .BtnEditar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Editar .Ventana_Editar .Editar_formulario div .TxtEditar {
+  padding: 10px;
+  border-radius: 40px;
+  outline: none;
+  border: 2px solid #0016b0;
+  background-color: #8f99e4;
+  text-align: center;
+  color: #ffffff;
+}
+
+/**********************/
+#Region h1 {
+  text-align: center;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+#Region h2 {
+  text-align: center;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-before: 118px;
+          margin-block-start: 118px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  font-size: 40px;
+}
+
+#Region button {
+  float: right;
+  margin-right: 21px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Region button:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+#Region ul {
+  font-family: "Opensans-bold";
+  font-size: 21px;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+  -webkit-margin-after: 7em;
+          margin-block-end: 7em;
+  -webkit-margin-start: 52px;
+          margin-inline-start: 52px;
+  -webkit-margin-end: 60px;
+          margin-inline-end: 60px;
+  -webkit-padding-start: 105px;
+          padding-inline-start: 105px;
+}
+
+#Region ul li {
+  font-family: "Opensans";
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.activado {
+  display: block;
+}
+
+/***********Ventana_Agregar_compañia*************/
+#Compania button {
+  float: right;
+  margin-right: 21px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Compania button:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+#Compania .Contenedor_Agregar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar {
+  background: grey;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  text-align: center;
+  padding: 30px;
+  width: 363px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar a i {
+  display: block;
+  float: right;
+  color: #000000;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar a i .svg-inline--fa.fa-w-11 {
+  width: 20px;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar a i:hover {
+  color: #0016b0;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div {
+  padding-bottom: 10px;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div .BtnGuardar,
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div .BtnModificar {
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div .BtnGuardar:hover,
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div .BtnModificar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+#Compania .Contenedor_Agregar .Ventana_Agregar .Crear_Compa_formulario div .TxtGuardar {
+  padding: 10px;
+  border-radius: 40px;
+  outline: none;
+  border: 2px solid #0016b0;
+  background-color: #8f99e4;
+  text-align: center;
+  color: #ffffff;
+}
+
+/***********Ventana_Agregar_compañia*************/
+#Compania .contenedorEmpresa {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#Compania .contenedorEmpresa .cuadro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Compania .contenedorEmpresa .cuadro .colum-3 {
+  width: calc(8.3% * 3);
+  font-size: 20px;
+}
+
+#Compania .contenedorEmpresa .cuadro .colum-3 button {
+  float: right;
+  margin-right: 21px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Compania .contenedorEmpresa .cuadrotitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#Compania .contenedorEmpresa .cuadrotitulo .colum-3 {
+  width: calc(8.3% * 3);
+}
+
+#Compania .contenedorEmpresa .cuadrotitulo .colum-3 span {
+  font-size: 30px;
+}
+
+/***********Ventana_contactos*************/
+.Contenedor_Contactos {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contenedor_Contactos .Ventana_Contactos {
+  background: white;
+  font-family: "Opensans-bold";
+  width: 1250px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header {
+  padding-bottom: 50px;
+  background: #1b55a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header .titulo {
+  width: calc(8.3% * 6);
+  color: #ffffff;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header .cierre {
+  width: calc(8.3% * 6);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header .cierre a i {
+  display: block;
+  float: right;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header .cierre a i .svg-inline--fa.fa-w-11 {
+  width: 20px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .contenedor-header .cierre a i:hover {
+  color: #0016b0;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal {
+  -webkit-transform: translate(0px, -66%);
+          transform: translate(0px, -66%);
+  background-color: white;
+  margin: auto;
+  width: 1208px;
+  height: 96px;
+  border-radius: 10px;
+  border: 4px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img {
+  width: calc(8.3% * 1);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .Circulo {
+  border: 2px solid blue;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 82px;
+  height: 74px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .Circulo .Image {
+  width: 82px;
+  height: 74px;
+  border-radius: 50px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .contenedor_camara {
+  background-color: blue;
+  height: 23px;
+  width: 25px;
+  border-radius: 50%;
+  -webkit-transform: translate(69px, -89%);
+          transform: translate(69px, -89%);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .contenedor_camara i {
+  margin: auto;
+  padding: 5px;
+  color: white;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .contenedor_camara i:hover {
+  color: #b8beec80;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Img .contenedor_camara #SubirArchivo {
+  display: none;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Nombre {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Nombre label {
+  float: left;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Nombre label span {
+  color: #ff000080;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Nombre .TxtNombre {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Apellido {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Apellido label {
+  float: left;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Apellido label span {
+  color: #ff000080;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Apellido .TxtApellido {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Cargo {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Cargo label {
+  float: left;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Cargo label span {
+  color: #ff000080;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Cargo .TxtCargo {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Email {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Email label {
+  float: left;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Email label span {
+  color: #ff000080;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Email .TxtEmail {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Compañia {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Compañia label {
+  float: left;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Compañia label span {
+  color: #ff000080;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Principal .Compañia #Empresa {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario {
+  -webkit-transform: translate(0px, -79%);
+          transform: translate(0px, -79%);
+  background-color: white;
+  margin: auto;
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Region {
+  width: calc(8.3% * 2);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Region #Region {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Pais {
+  width: calc(8.3% * 2);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Pais #Pais {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Ciudad {
+  width: calc(8.3% * 2);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Ciudad #Ciudad {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Direccion {
+  width: calc(8.3% * 2);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Direccion .TxtDireccion {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Interes {
+  width: calc(8.3% * 2);
+  margin: auto;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Formulario_Secundario .Interes #Interes {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario {
+  padding-bottom: 24px;
+  margin-top: -56px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal {
+  background-color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Canalcontacto {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Canalcontacto .TxtCanalcontacto {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .CuentaUsuario {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .CuentaUsuario .TxtCuentaUsuario {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Preferencias {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Preferencias .TxtPreferencias {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Boton {
+  margin: auto;
+  width: calc(8.3% * 2);
+  margin-bottom: 9px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Boton #BtnAgregar {
+  padding: 7px 10px 8px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Boton #BtnAgregar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Canal_Formulario .Formulario_Canal .Espacio {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .Contenedor {
+  overflow: auto;
+  padding-bottom: 0px;
+  height: 200px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario {
+  padding-bottom: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_Canalcontacto {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_Canalcontacto .TxtCanalcontactoGuardado {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_CuentaUsuario {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_CuentaUsuario .TxtCuentaUsuarioGuardado {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_Preferencias {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Guardado_Preferencias .TxtPreferenciasGuardado {
+  padding: 14px;
+  outline: none;
+  border: 2px solid #b4b4b4;
+  text-align: center;
+  color: #000000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton {
+  margin: auto;
+  width: calc(8.3% * 2);
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnEditar {
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border: 2px solid #1d72c2;
+  border-radius: 6px;
+  padding: 10px 30px 10px 30px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnEditar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnGuardarC {
+  font-size: 20px;
+  display: none;
+  color: #000000;
+  background-color: #8f99e4;
+  border: 2px solid #1d72c2;
+  border-radius: 6px;
+  padding: 10px 7px 10px 7px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnGuardarC:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnEliminar {
+  padding: 7px 17px 8px 17px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnEliminar i {
+  padding: 0px 15px 0px 0px;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario .ContenedorUL .Guardado_Canal_Formulario .Boton .BtnEliminar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario div .BtnGuardar {
+  margin: 10px;
+  padding: 13px 23px 13px 23px;
+  float: right;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #009926;
+  border: 2px solid #00a030;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario div .BtnGuardar:hover {
+  color: #ffffff;
+  background-color: #007000;
+  border: 2px solid #007000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario div .BtnEliminar {
+  margin: 10px;
+  padding: 13px 23px 13px 23px;
+  float: right;
+  font-size: 20px;
+  color: #ff0000;
+  background-color: #ffffff;
+  border: 2px solid #ff0000;
+}
+
+.Contenedor_Contactos .Ventana_Contactos .Contactos_Formulario div .BtnEliminar:hover {
+  color: #ffffff;
+  background-color: #ff000056;
+  border: 2px solid #ff0000;
+}
+
+/***************************/
+.titulocontactos {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 39.6px;
+          margin-block-start: 39.6px;
+  -webkit-margin-after: 20.3px;
+          margin-block-end: 20.3px;
+  -webkit-margin-start: 29.4px;
+          margin-inline-start: 29.4px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.Superior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 27px 89px 27px;
+}
+
+.Superior .contenedor_buscador {
+  width: calc(8.3% * 6);
+}
+
+.Superior .contenedor_buscador .buscador {
+  border: 2px solid #b4b4b4;
+  width: 502px;
+  height: 41px;
+}
+
+.Superior .contenedor_buscador .buscador svg {
+  padding: 10px;
+  float: right;
+}
+
+.Superior .contenedor_buscador .buscadorlogo {
+  line-height: 41px;
+  border: 2px solid #b4b4b4;
+  position: absolute;
+  left: 568px;
+  top: 163px;
+  color: #0016b0;
+  width: 40px;
+  height: 41px;
+  text-align: center;
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda {
+  padding: 23.9px 21px 23.5px 16.7px;
+  display: none;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  position: absolute;
+  top: 205px;
+  left: 28px;
+  width: 464.8px;
+  height: 327.6px;
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda span {
+  padding-bottom: 40.2px;
+  width: calc(8.3% * 4);
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .entrada {
+  width: calc(8.3% * 8);
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .txtnombre,
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .txtcargo {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  background-color: -internal-light-dark(white, #3b3b3b);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 2px;
+  border-width: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(#767676, #858585);
+  -o-border-image: initial;
+     border-image: initial;
+  width: 312px;
+}
+
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .TxtPaisRegionBusqueda,
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .TxtCompañiaBusqueda,
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .TxtCanalBusqueda,
+.Superior .contenedor_buscador .ventanaMenuBusqueda .contenedorMenuBusqueda .TxtInteresBusqueda {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: -internal-light-dark(white, #3b3b3b);
+  cursor: default;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(#767676, #858585);
+  -o-border-image: initial;
+     border-image: initial;
+  width: 190px;
+  height: 35.5px;
+}
+
+.Superior .contenedorvacio {
+  width: calc(8.3% * 3);
+}
+
+.Superior .contenedor_botones {
+  width: calc(8.3% * 3);
+}
+
+.Superior .contenedor_botones .agregarcontacto {
+  margin-left: 84px;
+  padding: 16px 31px 12px 31px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #0016b0;
+  border-radius: 0px;
+  border: 2px solid #0016b0;
+}
+
+.Superior .contenedor_botones .agregarcontacto:hover {
+  color: #000000;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.msjCantidad {
+  position: absolute;
+  top: 267px;
+  left: 39px;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.msjCantidad .contenedorMjs {
+  text-align: center;
+  border-radius: 4px;
+  width: 120px;
+  height: 24px;
+  background: rgba(199, 242, 255, 0.9);
+  line-height: 26px;
+}
+
+.msjCantidad .contenedorMjs .cantidadseleccionados {
+  color: #0683f9;
+}
+
+.contenedorElimiarcontacto {
+  visibility: hidden;
+  position: absolute;
+  top: 238px;
+  right: 29px;
+}
+
+.contenedorElimiarcontacto .eliminarcontacto {
+  padding: 0px 0px 0px 0px;
+  font-size: 20px;
+  color: #0683f9;
+  background-color: #8f99e408;
+  border-radius: 0px;
+  border: 0px solid #1d72c2;
+}
+
+.contenedorElimiarcontacto .eliminarcontacto:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.inferior {
+  padding: 0px 27px 0px 27px;
+}
+
+.inferior .contenedor {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inferior .contenedor .contenedor_lista_Titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Seleccion_Titulo {
+  line-height: 47px;
+  width: 54px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Seleccion_Titulo #SeleccionarTodo {
+  width: 15px;
+  height: 15px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Contacto_Titulo {
+  line-height: 47px;
+  width: 250px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Contacto_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_PaisRegion_Titulo {
+  line-height: 47px;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_PaisRegion_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Compania_Titulo {
+  line-height: 47px;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Compania_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Cargo_Titulo {
+  line-height: 47px;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Cargo_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Canal_Titulo {
+  line-height: 47px;
+  width: 184px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Canal_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Interes_Titulo {
+  line-height: 47px;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Interes_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Accion_Titulo {
+  line-height: 47px;
+  width: 82px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista_Titulo .lista_Accion_Titulo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.inferior .contenedor .contenedor_lista:hover {
+  background: rgba(199, 242, 255, 0.9);
+}
+
+.inferior .contenedor .contenedor_lista .lista_Seleccion {
+  line-height: 47px;
+  width: 54px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto {
+  width: 250px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto .foto_lista_Contacto {
+  width: calc(8.3% * 2);
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto .foto_lista_Contacto img {
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto .NombreCorreo_lista_Contacto {
+  width: calc(8.3% * 10);
+  text-align: initial;
+  line-height: 22px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto .NombreCorreo_lista_Contacto span:nth-of-type(1) {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista .lista_Contacto .NombreCorreo_lista_Contacto span:nth-of-type(2) {
+  font-family: "Opensans";
+}
+
+.inferior .contenedor .contenedor_lista .lista_PaisRegion {
+  width: 186px;
+  height: 56px;
+  line-height: 22px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_PaisRegion span:nth-of-type(1) {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista .lista_PaisRegion span:nth-of-type(2) {
+  font-family: "Opensans";
+}
+
+.inferior .contenedor .contenedor_lista .lista_Compania {
+  width: 186px;
+  height: 56px;
+  line-height: 46px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Compania span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista .lista_Cargo {
+  line-height: 46px;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Cargo span {
+  font-family: "Opensans-bold";
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal {
+  width: 184px;
+  height: 56px;
+  text-align: initial;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal .contenedorItemCanal {
+  width: 64px;
+  height: 24px;
+  background: #a9d1ff;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 4px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal .contenedorItemCanal span {
+  color: #0683f9;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal .btnmascanal {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: default;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0em;
+  font: 400 33px Arial;
+  padding: 0px 0px;
+  border-width: 0px;
+  border-style: outset;
+  border-color: -internal-light-dark(#767676, #858585);
+  -o-border-image: initial;
+     border-image: initial;
+  height: 0px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal .ventanacanales {
+  padding: 12px 0px;
+  background-color: white;
+  position: relative;
+  top: 34px;
+  right: 183px;
+  display: none;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Canal .contenedorCanal .ventanacanales .contenedorItemCanal {
+  display: inline;
+  width: 64px;
+  height: 24px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Interes {
+  line-height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 186px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Interes span {
+  margin-right: 15px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Interes .barraGuia {
+  top: 19px;
+  width: 109px;
+  border-radius: 16px;
+  height: 8px;
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Interes .barraGuia .barraValor {
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Accion {
+  line-height: 47px;
+  width: 82px;
+  height: 56px;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Accion .btnEliminar {
+  padding: 5px;
+  display: inline;
+}
+
+.inferior .contenedor .contenedor_lista .lista_Accion .btnEditar {
+  display: inline;
+  padding: 5px;
+}
+
+.inferior .contenedor div h1 {
+  text-align: center;
+}
+
+.ventanaEliminar {
+  margin: auto;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ventanaEliminar .contenedor {
+  background: white;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  padding: 17px;
+  width: 332px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.ventanaEliminar .contenedor .btncancelar {
+  padding: 13px 31px 13px 31px;
+  font-size: 20px;
+  color: #0016b0;
+  background-color: #ffffff;
+  border-radius: 0px;
+  border: 2px solid #0016b0;
+}
+
+.ventanaEliminar .contenedor .btncancelar:hover {
+  color: #ffffff;
+  background-color: #1d72c2;
+  border: 2px solid #0016b0;
+}
+
+.ventanaEliminar .contenedor .btneliminar {
+  float: right;
+  padding: 13px 31px 13px 31px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 0px;
+  border: 2px solid #ff0000;
+}
+
+.ventanaEliminar .contenedor .btneliminar:hover {
+  color: #000000;
+  background-color: #ff4949;
+  border: 2px solid #ff0000;
+}
+
+/***********Ventana_Agregar_compañia*************/
+#Usuario .contenedor-Agregar-Usuario {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Ventana_Agregar {
+  background: grey;
+  border-radius: 3px;
+  font-family: "Opensans-bold";
+  padding: 30px;
+  width: 420px;
+  border-radius: 20px;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Ventana_Agregar .usuariotituloycierre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Ventana_Agregar .usuariotituloycierre h1 {
+  width: calc(8.3% * 11.5);
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Ventana_Agregar .usuariotituloycierre a {
+  width: calc(8.3% * 0.5);
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario div {
+  width: calc(8.3% * 6);
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario div .ancho {
+  width: 190px;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario div label {
+  font-size: 20px;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario div .txt {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 40px;
+  outline: none;
+  border: 2px solid #0016b0;
+  background-color: #8f99e4;
+  text-align: center;
+  color: #ffffff;
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario .btn-completo {
+  text-align: center;
+  width: calc(8.3% * 12);
+}
+
+#Usuario .contenedor-Agregar-Usuario .Crear_Usuario_formulario .btn-completo .btn {
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Usuario button {
+  float: right;
+  margin-right: 21px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+
+#Usuario .contenedorUsuario {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#Usuario .contenedorUsuario .cuadrotitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#Usuario .contenedorUsuario .cuadrotitulo .colum-3 {
+  width: calc(8.3% * 2.4);
+}
+
+#Usuario .contenedorUsuario .cuadrotitulo .colum-3 span {
+  font-size: 30px;
+}
+
+#Usuario .contenedorUsuario .cuadro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Usuario .contenedorUsuario .cuadro .colum-3 {
+  width: calc(8.3% * 2.4);
+  font-size: 20px;
+}
+
+#Usuario .contenedorUsuario .cuadro .colum-3 button {
+  float: right;
+  margin-right: 21px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #8f99e4;
+  border-radius: 6px;
+  border: 2px solid #1d72c2;
+}
+/*# sourceMappingURL=Style.css.map */
