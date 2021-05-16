@@ -1,9 +1,3 @@
-proyecto 4, Un Data WareHouse de Contactos.
--------------------------------------------
-
-Proyecto con la libertad de realizarlo bajo cualquier tecnologia.
-------------------------------------
-
 Paquetes instalados:
 
 * sequelize
@@ -14,48 +8,29 @@ Paquetes instalados:
 * nodemon
 * express-fileupload (Instalado Pero aun no esta Utilizado)
 
-* todos los paquetes de react estos se instalaron al momento que se inicio el proyecto con el comando
-* create-react-app data_warehouse.
+ todos los paquetes de react estos se instalaron al momento que se inicio el proyecto con el comando
+ create-react-app data_warehouse.
 
------------
-
-Base de datos es MySql( MySQL Workbench).
+Base de datos es MySql( MySQL Workbench):en la carpeta BASE DATOS existe un archivo con nombre (Plantilla BASE_DATOS.sql),contiene todas las sentencias SQL de toda la base de datos.
 
 Se utilizó:
 javascript, React.js, Css, Node.js, Sass, Html.
 
-
-
-Crear BD Manual: 
-
-Importante: primero hacer la creacion de la base de datos, antes de ejecutar la pagina.
-
-En la carpeta BD existe un archivo con nombre (Plantilla BD.sql), contiene todas las sentencias SQL de toda la base de datos, este archivo se ejecuta en su totalidad en el programa de MySQL Workbench.
-
-
------------
-
 Ejecutar proyecto:
 
-* La pagina esta creada bajo el editor Visual Code, en la terminal llegar al directorio "\data_warehouse" en este punto ejecutar "code ."
+se necesita estar en la carpeta de  "\data_warehouse" en este punto ejecutar "code ."
 
-este proyecto se ejecuta con dos terminales la cual, con el puerto 3001 es para el Backend y 3000 para el Frontend.
+este proyecto se ejecuta con dos terminales la cual, con el puerto 2009 es para el Backend y 3000 para el Frontend.
 
-* En una de las terminales se ejecuta el siguiente comando: npx nodemon src/assets/Script/Back/Endpoint.js Donde "src/assets/Script/Back/Endpoint.js" es la ruta donde esta el
+Back:
 
-archivo del Backend.
+se ejecuta el siguiente comando: npx nodemon src/assets/Script/Back/Endpoint.js Donde "src/assets/Script/Back/Endpoint.js" es la ruta donde esta el
 
-
-* En la otra terminal el comando : npm start, la cual ejecuta React.
-
-* React abrira la pagina principal la cual sera loguin, en este caso se creo uno, usuario: Admin, pass: 123.
-
-* con este entrarias como administrador. ya desde este perfil puedes ingresar Usuarios, Region/Pais, Empresas, Contactos.
-
-* si quieres ver los privilegios de administrador y de ususario, solo tienes que crear un Usuario con rol(User). en este punto puedes iniciar la pagina de neuvo ó en la barra de dirrecciones solo dejar http://localhost:3000/ con esto la pagina llegara nuevamente al loguin. 
+Front
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+se ejecuta npm start, la cual ejecuta React, se abrirá la pagina principal la cual sera loguin, en este caso se creo uno, usuario:Camila, pass: 123 perfil de administrador
+ si quieres ver los privilegios de administrador y de ususario, solo tienes que crear un Usuario con rol(User). en este punto puedes iniciar la pagina de neuvo ó en la barra de dirrecciones solo dejar http://localhost:2009/ con esto la pagina llegara nuevamente al loguin. 
 
 
 # Getting Started with Create React App
@@ -69,7 +44,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:2009](http://localhost:2009) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -135,54 +110,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-<!-- 
-
-
- <main>
-           <section>
-               <h1>Crear Usuario</h1>
-               <form className="login_formulario">
-                    <div>
-                        <label className="grupo_formulario">Usuario</label>
-                        <input type="text" Name="Usuario"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Nombre</label>
-                        <input type="text" Name="Nombre"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Apellido</label>
-                        <input type="text" Name="Apellido"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Email</label>
-                        <input type="text" Name="Email"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Perfil</label>
-                        <input type="text" Name="Perfil"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Contraseña</label>
-                        <input type="text" Name="Contraseña"/>
-                    </div>
-
-                    <div>
-                        <label className="grupo_formulario">Repetir Contraseña</label>
-                        <input type="text" Name="Repetir_Contraseña"/>
-                    </div>
-
-                    <div>
-                        <input type="submit" Value="Crear"/>
-                    </div>
-
-
-               </form>
-                
-           </section>
-       </main> -->

@@ -1,35 +1,35 @@
 const CONSTANTS = {
   //APIKEY: "Ff19ygaLzNZSsZhE8C9ECIN3zhUdqqHP",
-  BASE_PATH: "http://localhost:3001",
+  BASE_PATH: "http://localhost:2009",
 
-  LOGIN: "/Login",
-  MOSTRARREGION: "/Mostrar-R",
-  MOSTRARPC: "/Mostrar-PC",
-  AGREGARRPC: "/Agregar-RPC",
-  ELIMINARPC: "/Eliminar-PC",
-  EDITARARPC: "/Editar-PC",
-  VALIDARCIUDADCOMPA: "/Validad-Empresa",
-  MOSTRAREMP: "/Mostrar-Empresas",
-  AGREGAREMPRESAS: "/Agregar-Empresas",
-  ELIMINAREMPRESAS: "/Eliminar-Empresas",
-  MOSTRAREDITAREMPRESAS: "/Mostrar-Editar-Empresas",
-  EDITAREMPRESAS: "/Editar-Empresas",
-  NOMBREEMPRESAS: "/Nombre-Empresas",
-  AGREGARCONTACTO: "/Agregar-Contacto",
-  AGREGARCANAL: "/Agregar-Canal",
-  EDITARCONTACTO: "/Editar_Contacto",
-  MOSTRARCONTACTOS: "/Mostrar_Contactos",
-  MOSTRARCONTACTOSANAL: "/Mostrar_Contactos_Canal",
-  BUSCADORDECONTACTOS: "/Buscar_Contactos",
-  BUSCARUNCONTACTO: "/Buscar_Un_Contactos",
-  MOSTRARCONTACTOSANALTODOS: "/Mostrar_Contactos_Canal_Todos",
-  ACTUALIZARELIMINARCANAL: "/Actualizar_Eliminar_Canal",
-  ELIMINARUNCONTACTO: "/Eliminar_Un_Contacto",
+  LOGUIN: "/inicio",
+  MOSTRARREGION: "/MostrarRegion",
+  MOSTRARPC: "/MostrarPC",
+  AGREGARRPC: "/AgregarRPC",
+  ELIMINARPC: "/Eliminar",
+  EDITARARPC: "/Editar",
+  VALIDARCIUDADCOMPA: "/ValidaEmpresa",
+  MOSTRAREMP: "/MostrarEmpresas",
+  AGREGAREMPRESAS: "/AgregarEmpresas",
+  ELIMINAREMPRESAS: "/EliminarEmpresas",
+  MOSTRAREDITAREMPRESAS: "/MostrarEditarEmpresas",
+  EDITAREMPRESAS: "/EditarEmpresas",
+  NOMBREEMPRESAS: "/NombreEmpresas",
+  AGREGARCONTACTO: "/AgregarContacto",
+  AGREGARCANAL: "/AgregarCanal",
+  EDITARCONTACTO: "/EditarContacto",
+  MOSTRARCONTACTOS: "/MostrarContactos",
+  MOSTRARCONTACTOSANAL: "/MostrarContactosChannel",
+  BUSCADORDECONTACTOS: "/BuscarContactos",
+  BUSCARUNCONTACTO: "/BuscarUnContactos",
+  MOSTRARCONTACTOSANALTODOS: "/MostrarContactosCanalTodos",
+  ACTUALIZARELIMINARCANAL: "/ActualizarEliminarCanal",
+  ELIMINARUNCONTACTO: "/EliminarUnContacto",
   INSERTUSER: "/InsertUser",
-  MOSTRARUSUARIO: "/Mostrar_Usuarios",
-  EDITARUSUARIO: "/Editar_Usuario",
-  ACTUALIZARUSUARIO: "/Actualizar_Usuario",
-  ELIMINARUSUARIO: "/Eliminar_Usuario",
+  MOSTRARUSUARIO: "/MostrarUsuarios",
+  EDITARUSUARIO: "/EditarUsuario",
+  ACTUALIZARUSUARIO: "/ActualizarUsuario",
+  ELIMINARUSUARIO: "/EliminarUsuario",
 
   POST: "POST",
   GET: "GET",
@@ -37,7 +37,7 @@ const CONSTANTS = {
   PUT: "PUT",
 };
 
-//llamado tipo get
+//llamado////////////////////////////////////////////
 async function LlamadoGet(Rutafetch, method) {
   const Resultado = await fetch(Rutafetch, {
     mode: "cors",
@@ -55,7 +55,6 @@ async function LlamadoGet(Rutafetch, method) {
   return Resultado;
 }
 
-//llamado tipo pos
 async function Llamado(Rutafetch, method, BaseBody = "") {
   const Resultado = await fetch(Rutafetch, {
     mode: "cors",
@@ -76,7 +75,7 @@ async function Llamado(Rutafetch, method, BaseBody = "") {
 
 module.exports = {
   
-  //agregar usuario
+///////agregar un usuario/////////////////////////
   UsuarioCRUD: async (BaseBody) => {
     let Rutafetch = "";
     let method = "";
@@ -121,15 +120,15 @@ module.exports = {
     return respuesta;
   },
 
-  //login
+ //////////ingresar al sistema/////////
   login: async (BaseBody) => {
-    const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.LOGIN;
+    const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.LOGUIN;
     const method = CONSTANTS.POST;
     const respuesta = await Llamado(Rutafetch, method, BaseBody);
     return respuesta;
   },
 
-  //consultar
+  /////////////consulta///////////////////////
   ConsultarRPC: async (BaseBody) => {
     let Rutafetch = "";
     let method = "";
@@ -157,7 +156,7 @@ module.exports = {
     return respuesta;
   },
 
-  //agregar
+  /////////agregar////////////////////////
   AgregarRPC: async (BaseBody) => {
     const method = CONSTANTS.POST;
     const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.AGREGARRPC;
@@ -165,7 +164,7 @@ module.exports = {
     return respuesta;
   },
 
-  //eliminar
+  /////////delete///////////////////////////////////7
   EliminarPC: async (BaseBody) => {
     const method = CONSTANTS.POST;
     const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.ELIMINARPC;
@@ -173,7 +172,7 @@ module.exports = {
     return respuesta;
   },
 
-  //EDITAR
+  ///////////////update//////////////////
   EditarPC: async (BaseBody) => {
     const method = CONSTANTS.POST;
     const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.EDITARARPC;
@@ -181,7 +180,7 @@ module.exports = {
     return respuesta;
   },
 
-  //validar ciudad compañia
+  /////////////////////validar ciudad ////////////
   EmpresaCRUD: async (BaseBody) => {
     let Rutafetch = "";
     let method = "";
@@ -240,7 +239,7 @@ module.exports = {
     return respuesta;
   },
 
-  //agregar contacto
+ 
   AgregarContacto: async (BaseBody) => {
     const method = CONSTANTS.POST;
     const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.AGREGARCONTACTO;
@@ -248,7 +247,7 @@ module.exports = {
     return respuesta;
   },
 
-  //agregar canal
+
   AgregarCanal: async (BaseBody) => {
     const method = CONSTANTS.POST;
     const Rutafetch = CONSTANTS.BASE_PATH + CONSTANTS.AGREGARCANAL;

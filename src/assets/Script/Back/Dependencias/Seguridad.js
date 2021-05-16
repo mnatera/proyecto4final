@@ -21,7 +21,6 @@ module.exports = {
             "Usuario": Usuario,
             "Perfil": Perfil
         }
-        //const Token = jsonWebToken.sign(payload, myJWTSecretKey, { expiresIn: 60 * 60 * 24 }); //24 horas en segundos
         const Token = jsonWebToken.sign(payload, myJWTSecretKey);
         return Token;
     }
